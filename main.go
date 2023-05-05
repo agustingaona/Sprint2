@@ -32,8 +32,7 @@ func main() {
 	campoPass.SetPlaceHolder("Contraseña: ")
 
 	boton := widget.NewButton("Ingresar", func() {
-		var user string
-		user = campoUsuario.Text
+		user := campoUsuario.Text
 		pass := campoPass.Text
 		fmt.Println(user)
 		fmt.Println(pass)
@@ -45,7 +44,7 @@ func main() {
 			ventana := Ventana{}
 			ventana.ventanaUsuario()
 		} else if okAdmin {
-
+			fmt.Println("ADMIN")
 		}
 	})
 
